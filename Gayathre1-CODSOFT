@@ -1,0 +1,82 @@
+def chatbot():
+    print("Chatbot: Hello! I'm your simple chatbot. How can I assist you today?")
+
+    while True:
+        user_input = input("You: ").lower()  # Convert input to lowercase to standardize
+
+        # Exit condition
+        if "exit" in user_input or "bye" in user_input:
+            print("Chatbot: Goodbye! Have a nice day!")
+            break
+
+        # Greeting responses
+        elif "hello" in user_input or "hi" in user_input:
+            print("Chatbot: Hi there! How can I help you?")
+
+        # Asking about the bot
+        elif "how are you" in user_input:
+            print("Chatbot: I'm just a computer program, but thanks for asking! How about you?")
+
+        # Asking for time
+        elif "time" in user_input:
+            print("Chatbot: I don't have a watch, but you can check your phone or computer clock!")
+
+        # Asking for help
+        elif "help" in user_input or "support" in user_input:
+            print("Chatbot: Sure! I can assist you with general questions. Feel free to ask!")
+
+        # Asking about the weather
+        elif "weather" in user_input:
+            print("Chatbot: I can't check the weather right now, but it's always good to prepare for all conditions!")
+
+        # Asking about the bot's purpose
+        elif "what can you do" in user_input:
+            print("Chatbot: I can answer basic questions, greet you, and provide simple information. Try asking me something!")
+
+        # Asking about the chatbot's name
+        elif "what is your name" in user_input or "who are you" in user_input:
+            print("Chatbot: I am a simple rule-based chatbot. You can call me Chatbot!")
+
+        # Asking about the meaning of life
+        elif "meaning of life" in user_input:
+            print("Chatbot: The meaning of life is a philosophical question, but some say it's 42!")
+
+        # Asking about programming languages
+        elif "programming language" in user_input:
+            print("Chatbot: I am coded in Python, but there are many other languages like Java, C++, and JavaScript!")
+
+        # Asking for a joke
+        elif "joke" in user_input or "funny" in user_input:
+            print("Chatbot: Why don't scientists trust atoms? Because they make up everything!")
+
+        # Asking for a motivational quote
+        elif "motivation" in user_input or "inspire me" in user_input:
+            print("Chatbot: Believe in yourself! Every day is a new opportunity to grow and improve.")
+
+        # Asking about favorite things
+        elif "favorite" in user_input:
+            if "food" in user_input:
+                print("Chatbot: I don't eat, but I've heard pizza is pretty popular!")
+            elif "color" in user_input:
+                print("Chatbot: I don't have eyes, but I like the sound of blue!")
+            elif "movie" in user_input:
+                print("Chatbot: I haven't seen any, but people talk a lot about 'Inception'!")
+
+        # Asking about hobbies
+        elif "hobby" in user_input:
+            print("Chatbot: I enjoy answering questions and chatting with people like you!")
+
+        # Asking about location
+        elif "where are you" in user_input:
+            print("Chatbot: I live inside your computer or phone, wherever you're running me!")
+
+        # Asking about the user's well-being
+        elif "how are you doing" in user_input:
+            print("Chatbot: I'm just lines of code, but thanks for asking! How about you?")
+
+        # Default response for unrecognized queries
+        else:
+            print("Chatbot: I'm sorry, I don't understand that. Could you please ask something else?")
+
+# Start the chatbot
+chatbot()
